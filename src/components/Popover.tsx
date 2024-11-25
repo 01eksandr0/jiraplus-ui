@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 
-const Popover = ({
+export const Popover = ({
   isOpen = false,
   placement = "right",
   gap = 0,
@@ -131,5 +131,3 @@ const Popover = ({
     </div>
   );
 };
-
-export default Popover;

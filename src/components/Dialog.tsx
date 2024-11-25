@@ -7,7 +7,11 @@ interface IProps {
   isVisible: boolean;
 }
 
-const Dialog: React.FC<IProps> = ({ children, setVisible, isVisible }) => {
+export const Dialog: React.FC<IProps> = ({
+  children,
+  setVisible,
+  isVisible,
+}) => {
   return (
     isVisible && (
       <div className="z-[3] fixed top-0 bottom-0 left-0 right-0 bg-[rgba(0,0,0,0.5)] flex items-center justify-center">
@@ -28,5 +32,3 @@ const Dialog: React.FC<IProps> = ({ children, setVisible, isVisible }) => {
     )
   );
 };
-
-export default Dialog;
